@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snake Game</title>
+<link rel="stylesheet" href="snake.css">
+</head>
+<body>
+ 
+  <div class="game-container">
+    <h1>Snake Game</h1>
+ 
+    <div class="scoreboard">
+      <div>Score: <span id="score">0</span></div>
+      <div>Best: <span id="best">0</span></div>
+    </div>
+ 
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+ 
+    <p id="message">Use arrow keys or WASD to move</p>
+ 
+    <button id="restartBtn">Restart</button>
+ 
+    <div class="controls">
+      <div></div>
+      <button class="dir-btn" id="up">&#8593;</button>
+      <div></div>
+      <button class="dir-btn" id="left">&#8592;</button>
+      <button class="dir-btn" id="down">&#8595;</button>
+      <button class="dir-btn" id="right">&#8594;</button>
+    </div>
+  </div>
+ 
+  <script src="snake.js"></script>
+</body>
+</html>
+ 

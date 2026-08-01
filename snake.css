@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1e1e2f;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #f0f0f0;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px;
+  background: #26263f;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 24px;
+  font-size: 16px;
+  color: #c9c9d9;
+}
+
+#score, #best {
+  font-weight: 700;
+  color: #7cf29c;
+}
+
+canvas {
+  background: #12121f;
+  border: 2px solid #44446a;
+  border-radius: 8px;
+}
+
+#message {
+  font-size: 14px;
+  color: #a0a0b8;
+  min-height: 18px;
+  text-align: center;
+}
+
+#restartBtn {
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #12121f;
+  background: #7cf29c;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+#restartBtn:hover {
+  background: #63d982;
+}
+
+#restartBtn:active {
+  transform: scale(0.96);
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  grid-template-rows: repeat(2, 48px);
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.dir-btn {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f0f0f0;
+  background: #33334f;
+  border: 1px solid #44446a;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.dir-btn:hover {
+  background: #44446a;
+}
+
+.dir-btn:active {
+  transform: scale(0.94);
+}
